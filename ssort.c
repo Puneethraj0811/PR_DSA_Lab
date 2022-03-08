@@ -1,6 +1,6 @@
 #include<stdio.h>
 int a[10], i, j, n, temp, min;
-ssort()
+void ssort()
 {
 	for(i=0;i<n;i++)
 	{
