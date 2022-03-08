@@ -1,6 +1,6 @@
 #include<stdio.h>
 int a[10], n, i, j, temp;
-bsort()
+void bsort()
 {
 	for(i=0;i<n-1;i++)
 	{
