@@ -1,7 +1,7 @@
 #include<stdio.h>
-int cost[15][15];
-int n,mincost,v1=0,v2=0;
+int cost[15][15],n,mincost,v1=0,v2=0;
 
+//finding the edge having min weight
 void findmin()
 {
         int edgewt=99,i,j;
@@ -19,6 +19,7 @@ void findmin()
         }
 }
 
+//finding cycles
 void doUnion(int root[],int v1,int v2)
 {
         int temp,i;
@@ -42,9 +43,9 @@ void kruskal()
         i=0;
         while(i!=n-1)
         {
-                findmin();
+                findmin(); //updates v1 and v2 vertices of edge with min weight
                 edgewt=cost[v1][v2];
-                cost[v1][v2]=cost[v2][v1]=0;
+                cost[v1][v2]=cost[v2][v1]=0;  //supresses selection of same edges on next time
                 if(root[v1]!=root[v2])
                 {
                         printf("\n(%d,%d)",v1,v2);
@@ -65,6 +66,7 @@ void main()
         for(i=0;i<n;i++)
         for(j=0;j<n;j++)
         scanf("%d",&cost[i][j]); 
+        //graph display
         for(i=0;i<n;i++)
         {
                 for(j=0;j<n;j++)
