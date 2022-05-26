@@ -35,8 +35,7 @@ void doUnion(int root[],int v1,int v2)
 
 void kruskal()
 { 
-        int i,edgewt;
-        int root[n];
+        int i,edgewt,root[n];
         for(i=0;i<n;i++)
         root[i]=i;
         printf("\nEdges of min-cost spanning tree are");
