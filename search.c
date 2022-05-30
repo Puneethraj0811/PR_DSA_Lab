@@ -56,10 +56,12 @@ void main()
 		scanf("%d",&ch); 
 		switch(ch)
 		{
-			case 1:lsearch(key);
-			       break;
-			case 2:bs(key);
-			       break;
+			case 1: lsearch(key);
+			        break;
+			case 2: bs(key);
+			        break;
+			default:printf("Inavlid choice");
+				break;
 		}
 		printf("Do you want to continue:");
 		scanf("%d",&op);
