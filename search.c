@@ -60,7 +60,7 @@ void main()
 			        break;
 			case 2: bs(key);
 			        break;
-			default:printf("Inavlid choice");
+			default:printf("Inavlid choice\n");
 				break;
 		}
 		printf("Do you want to continue:");
