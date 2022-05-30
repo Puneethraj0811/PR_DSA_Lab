@@ -2,14 +2,14 @@
 #include<stdlib.h>
 #define max 3
 int top=-1,s[max],ch,ele,i;
-void push()
+int push()
 {
 	printf("Enter the element to push\n");
 	scanf("%d",&ele);
 	if(top==max-1)
 	{
 		printf("Stack is full\n");
-		exit (0);
+		return 0;
 	}
 	s[++top]=ele;
 }
@@ -18,7 +18,7 @@ int pop()
 	if(top==-1)
 	{
 		printf("Stack is empty\n");
-		exit (0);
+		return 0;
 	}
 	top=top-1;
 	return ele;
