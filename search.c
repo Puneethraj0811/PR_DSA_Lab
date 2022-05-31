@@ -47,10 +47,10 @@ void main()
 	printf("Enter the elements\n");
 	for(i=0;i<n;i++)
 	scanf("%d",&a[i]);
-	printf("Enter the search elements\n");
-	scanf("%d",&key);
 	while(op)
 	{
+                printf("Enter the search elements\n");
+         	scanf("%d",&key);
 		printf("1.Linear Search\n2.Binary Search\n");
 		printf("Enter your choice:");
 		scanf("%d",&ch); 
