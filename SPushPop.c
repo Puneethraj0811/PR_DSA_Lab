@@ -38,7 +38,7 @@ int main()
 	int ch,opt=1;
 	while(opt)
 	{
-		printf("1.Push\n2.Pop\n3.Display\n4.Exit\nEnter your choice:");
+		printf("1.Push\n2.Pop\n3.Display\n\nEnter your choice:");
 		scanf("%d",&ch);
 		switch(ch)
 		{
@@ -55,7 +55,6 @@ int main()
 			        break;
 			case 3: display();
 			        break;
-			case 4: exit (0);
 			default:printf("Invalid choice");
 				break;
 		}
