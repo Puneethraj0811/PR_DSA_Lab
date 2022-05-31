@@ -10,7 +10,7 @@ void lsearch(int key)
 		if(key==a[i])
 		{
 			printf("Element is %d found at location %d\n",key,i);
-			exit(0);
+			return 0;
 		}
 	}
 	printf("Element not found\n");
@@ -26,7 +26,7 @@ void bs(int key)
 		if(key==a[mid])
 		{
 			printf("Element is %d found at %d\n",key,mid);
-			exit(0);
+			return 0;
 		}
 		else if(key<a[mid])
 		{
