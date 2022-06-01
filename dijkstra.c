@@ -74,6 +74,13 @@ void main()
 	scanf("%d",&src);
 	dijkstra(src);
 	for(j=0;j<n;j++)
-	shortest_path(src,j);
-	printf("\n");
+	{
+ 		if(d[j]==99)
+		printf("Is not reacheble from %d-->%d",source,j);
+	}
+  	else
+	{
+		shortest_path(src,j);
+		printf("\n");
+	}
 }
